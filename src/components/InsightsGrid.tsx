@@ -30,15 +30,15 @@ const INSIGHTS = [
 
 export function InsightsGrid() {
     return (
-        <section id="insights" className="py-24 bg-white text-black relative">
+        <section id="insights" className="py-24 bg-black text-white relative">
             <div className="max-w-7xl mx-auto px-6">
 
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                     <div>
-                        <h2 className="font-sans text-sm tracking-[0.3em] uppercase text-black font-semibold mb-4">
+                        <h2 className="font-sans text-sm tracking-[0.3em] uppercase text-white font-semibold mb-4">
                             Perspective
                         </h2>
-                        <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-black">
+                        <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white">
                             Latest Insights
                         </h3>
                     </div>

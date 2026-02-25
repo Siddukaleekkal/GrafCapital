@@ -28,10 +28,10 @@ function AnimatedHero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] flex flex-col items-start"
+                className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 md:mb-8 text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] flex flex-col items-start"
             >
                 <span>Building Exceptional</span>
-                <span className="relative flex overflow-hidden w-[280px] md:w-[400px] lg:w-[500px] h-[80px] md:h-[120px] lg:h-[140px] items-center">
+                <span className="relative flex overflow-hidden w-[220px] sm:w-[280px] md:w-[400px] lg:w-[500px] h-[60px] sm:h-[80px] md:h-[120px] lg:h-[140px] items-center">
                     {titles.map((title, index) => (
                         <motion.span
                             key={index}
@@ -54,20 +54,23 @@ function AnimatedHero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.9 }}
-                className="font-sans text-lg md:text-xl text-white max-w-2xl mb-12 font-light drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]"
+                className="font-sans text-sm sm:text-base md:text-lg text-white max-w-4xl mb-8 md:mb-12 font-light drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] leading-relaxed"
             >
-                We deploy specialized capital into uniquely structured funds designed for the modern market. Our boutique approach prioritizes precision and alignment, ensuring your investment grows with purpose.
+                At Graf Capital Holdings, we work to identify durable companies positioned to benefit from structural shifts in technology, infrastructure, and industrial demand. We concentrate capital in businesses that sit at critical bottlenecks of growth, whose products or services remain essential regardless of market cycles. Our approach blends disciplined fundamental analysis with a long-term ownership mindset, prioritizing resilience, indispensability, and asymmetric upside.
             </motion.p>
 
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="flex flex-row gap-4"
+                className="flex flex-row gap-4 w-full md:w-auto"
             >
-                <button className="px-8 py-4 bg-black text-white border border-black font-sans uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+                <a
+                    href="#performance"
+                    className="w-full md:w-auto px-6 sm:px-8 py-4 bg-black text-white border border-black font-sans uppercase tracking-widest text-xs sm:text-sm hover:bg-white hover:text-black transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-[0_4px_12px_rgba(0,0,0,0.5)] block text-center"
+                >
                     EXPLORE OUR FUNDS
-                </button>
+                </a>
             </motion.div>
         </div>
     );

@@ -46,15 +46,10 @@ export function Header() {
                             <Link href="#about" className="hover:text-white transition-colors">About</Link>
                             <Link href="#insights" className="hover:text-white transition-colors">Insights</Link>
                             <Link href="#performance" className="hover:text-white transition-colors">Performance</Link>
-                            <Link href="#careers" className="hover:text-white transition-colors">Careers</Link>
                         </nav>
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <button className="hidden md:block px-5 py-2 bg-white text-black font-semibold hover:bg-graf-gold transition-all uppercase text-sm tracking-widest">
-                            Get Started
-                        </button>
-
                         {/* Mobile Menu Toggle */}
                         <button
                             className="md:hidden text-white"
@@ -86,10 +81,6 @@ export function Header() {
                             <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">About</Link>
                             <Link href="#insights" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Insights</Link>
                             <Link href="#performance" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Performance</Link>
-                            <Link href="#careers" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Careers</Link>
-                            <button className="mt-8 px-6 py-4 bg-white text-black font-semibold hover:bg-graf-gold hover:text-black transition-all font-sans text-lg">
-                                Get Started
-                            </button>
                         </nav>
                     </motion.div>
                 )}
