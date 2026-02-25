@@ -40,12 +40,6 @@ export function FundMakeup() {
       ytdReturn: 15.6, pltmEps: 4.85, divYield: 0.00, marketCap: 35.8, volume: 6.2,
       chartData: [70.5, 71.2, 70.8, 72.5, 74.1, 73.8, 75.2, 74.9, 76.5, 78.1],
       price: 78.10, dailyChange: 1.60, dailyChangePercent: 2.09
-    },
-    {
-      id: "SPAXX", name: "Fidelity Gov Money", country: "USA", countryCode: "US",
-      ytdReturn: 1.05, pltmEps: null, divYield: 4.95, marketCap: 320.5, volume: 0.0,
-      chartData: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
-      price: 1.00, dailyChange: 0.00, dailyChangePercent: 0.00
     }
   ]);
 
@@ -53,7 +47,7 @@ export function FundMakeup() {
   useEffect(() => {
     const fetchRealData = async () => {
       try {
-        const symbols = "ASML,TSM,KLAC,VRT,MPWR,ON,SPAXX";
+        const symbols = "ASML,TSM,KLAC,VRT,MPWR,ON";
         const res = await fetch(`/api/finance?symbols=${symbols}`);
         if (!res.ok) return;
         const result = await res.json();

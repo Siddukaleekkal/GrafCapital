@@ -43,13 +43,20 @@ export function Header() {
 
                         {/* Desktop Nav Links */}
                         <nav className="hidden md:flex gap-8 items-center font-sans text-sm tracking-widest uppercase text-gray-300">
-                            <Link href="#about" className="hover:text-white transition-colors">About</Link>
-                            <Link href="#insights" className="hover:text-white transition-colors">Insights</Link>
-                            <Link href="#performance" className="hover:text-white transition-colors">Performance</Link>
+                            <Link href="/#about" className="hover:text-white transition-colors">About</Link>
+                            <Link href="/#insights" className="hover:text-white transition-colors">Insights</Link>
+                            <Link href="/#performance" className="hover:text-white transition-colors">Performance</Link>
                         </nav>
                     </div>
 
                     <div className="flex items-center gap-6">
+                        <a
+                            href="mailto:tgraf@grafcapitalholdings.com"
+                            className="hidden md:block px-6 py-3 bg-white text-black font-sans text-xs tracking-[0.2em] uppercase hover:bg-graf-gold hover:text-white transition-all duration-300"
+                        >
+                            Get in Touch
+                        </a>
+
                         {/* Mobile Menu Toggle */}
                         <button
                             className="md:hidden text-white"
@@ -78,9 +85,17 @@ export function Header() {
                             <X size={32} />
                         </button>
                         <nav className="flex flex-col gap-8 text-2xl font-serif mt-10">
-                            <Link href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">About</Link>
-                            <Link href="#insights" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Insights</Link>
-                            <Link href="#performance" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Performance</Link>
+                            <Link href="/#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">About</Link>
+                            <Link href="/#insights" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Insights</Link>
+                            <Link href="/#performance" onClick={() => setMobileMenuOpen(false)} className="hover:text-graf-gold transition-colors">Performance</Link>
+
+                            <a
+                                href="mailto:tgraf@grafcapitalholdings.com"
+                                className="mt-4 px-6 py-4 bg-white text-black font-sans text-xs tracking-[0.2em] uppercase text-center"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Get in Touch
+                            </a>
                         </nav>
                     </motion.div>
                 )}

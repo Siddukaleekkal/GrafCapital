@@ -69,7 +69,7 @@ function AnimatedHero() {
                     href="#performance"
                     className="w-full md:w-auto px-6 sm:px-8 py-4 bg-black text-white border border-black font-sans uppercase tracking-widest text-xs sm:text-sm hover:bg-white hover:text-black transition-all duration-300 ease-out transform hover:-translate-y-1 shadow-[0_4px_12px_rgba(0,0,0,0.5)] block text-center"
                 >
-                    EXPLORE OUR FUNDS
+                    EXPLORE OUR HOLDINGS
                 </a>
             </motion.div>
         </div>
