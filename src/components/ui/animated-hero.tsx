@@ -28,14 +28,14 @@ function AnimatedHero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 md:mb-8 text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] flex flex-col items-start"
+                className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 md:mb-8 text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] flex flex-col items-start"
             >
                 <span>Building Exceptional</span>
-                <span className="relative flex overflow-hidden w-[220px] sm:w-[280px] md:w-[400px] lg:w-[500px] h-[60px] sm:h-[80px] md:h-[120px] lg:h-[140px] items-center">
+                <span className="relative flex overflow-hidden w-[180px] sm:w-[280px] md:w-[400px] lg:w-[500px] h-[50px] sm:h-[80px] md:h-[120px] lg:h-[140px] items-center">
                     {titles.map((title, index) => (
                         <motion.span
                             key={index}
-                            className="absolute italic font-light opacity-100 text-graf-gold drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] pb-4 md:pb-6"
+                            className="absolute italic font-light opacity-100 text-graf-gold drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] pb-2 md:pb-6"
                             initial={{ opacity: 0, y: "-100%" }}
                             transition={{ type: "spring", stiffness: 50 }}
                             animate={

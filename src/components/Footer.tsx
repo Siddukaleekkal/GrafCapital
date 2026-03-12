@@ -1,15 +1,17 @@
+"use client";
+
 import Link from "next/link";
 
 export function Footer() {
     return (
-        <footer className="bg-black border-t border-white/5 pt-20 pb-10 text-gray-400 font-sans text-sm">
+        <footer className="relative z-10 bg-black border-t border-white/5 pt-20 pb-10 text-gray-400 font-sans text-sm">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="col-span-1 md:col-span-4 flex flex-col items-center text-center">
                     <Link href="/" className="flex items-center justify-center mb-6">
                         <img
                             src="/logo-transparent.png"
                             alt="Graf Capital"
-                            className="h-20 sm:h-28 md:h-36 w-auto object-contain scale-[1.3] sm:scale-[1.5] md:scale-[2]"
+                            className="h-16 sm:h-20 md:h-24 w-auto object-contain"
                         />
                     </Link>
                     <p className="max-w-md leading-relaxed font-light mt-2 sm:mt-4 mx-auto text-sm">
@@ -24,10 +26,10 @@ export function Footer() {
                             Designed and maintained by Viracis Technology Solutions.
                         </p>
                     </div>
-                    <div className="flex gap-6">
-                        <Link href="#" className="hover:text-white transition">Privacy Policy</Link>
-                        <Link href="#" className="hover:text-white transition">Terms of Use</Link>
-                        <Link href="#" className="hover:text-white transition">Disclosures</Link>
+                    <div className="flex gap-6 relative z-50">
+                        <Link href="/privacy-policy" className="hover:text-white transition cursor-pointer">Privacy Policy</Link>
+                        <Link href="/terms-of-use" className="hover:text-white transition cursor-pointer">Terms of Use</Link>
+                        <Link href="/disclosures" className="hover:text-white transition cursor-pointer">Disclosures</Link>
                     </div>
                 </div>
             </div>
